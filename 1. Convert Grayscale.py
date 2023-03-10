@@ -4,7 +4,7 @@
 from PIL import Image, ImageOps
 
 # Membuat variabel citraAsli untuk menjadi wadah gamabr yang akan dikonversi;
-citraAsli = Image.open("PCD\Diva\Materi\seal.jpg")
+gambar_Asli = Image.open('seal.jpg')
 # Melakukan konversi RGB ke Grayscale dengan fungsi ImageOps.grayscale()
-citraHP = ImageOps.grayscale(citraAsli)
-citraHP.save('PCD\Diva\Materi\sealGS.jpg')
+gambar_Grayscale = ImageOps.grayscale(gambar_Asli)
+gambar_Grayscale.save('sealGS.jpg')
